@@ -16,7 +16,7 @@ import AWSS3StoragePlugin
 @main
 struct PhotoSharingApp: App {
 
-    @ObservedObject private var viewModel = ViewModel()
+    @StateObject private var viewModel = ViewModel()
 
     init() {
         configureAmplify()
