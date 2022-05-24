@@ -11,7 +11,7 @@ import Amplify
 
 struct PostsListingView: View {
 
-    @StateObject var viewModel: UserProfileView.ViewModel
+    @ObservedObject var viewModel: UserProfileView.ViewModel
     @State private var pageNumber = 1
 
     var body: some View {
