@@ -22,7 +22,11 @@ class AppServiceManager: ServiceManager {
 
     private init() {}
 
-    static let shared = AppServiceManager()
+    static let shared: AppServiceManager = {
+        let manager = AppServiceManager()
+        manager.configure()
+        return manager
+    }()
 
     let authService: AuthService = AmplifyAuthService()
     let dataStoreService: DataStoreService = AmplifyDataStoreService()
