@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import Amplify
 
 struct ConfirmSignUpView: View {
     @StateObject private var viewModel: ViewModel

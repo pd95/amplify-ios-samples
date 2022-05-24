@@ -6,8 +6,6 @@
 //
 
 import SwiftUI
-import Combine
-import Amplify
 import Kingfisher
 
 struct PostView: View {
